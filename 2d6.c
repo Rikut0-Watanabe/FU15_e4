@@ -4,7 +4,7 @@
 int main(void)
 {
 	int d1, d2, total;
-    char name[20];
+    char name[20], result[4];
 
     printf("What is your name?\m");
     scanf("%s[]", name);
@@ -15,5 +15,13 @@ int main(void)
     total=d1+d2;
 
     printf("Die 1:%d\nDie 2:%d\nTotal%d\n",d1, d2, total);
+
+    if(total>=7){
+        printf("%s won!",name);
+    }
+    else {
+        printf("%s lost",name);
+    }
+
 	return 0;
 }
